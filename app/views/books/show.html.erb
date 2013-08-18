@@ -25,7 +25,8 @@
 
 
 <p>
-  Admin Actions:
+  Change this book:
   <%= link_to 'Edit', edit_book_path(@book) %> |
   <%= link_to "Delete", book_path(@book), method: :delete, data: { confirm: "Are you sure?" } %>
 </p>
+<p> <%= link_to 'Back to the bookshelf', books_path %> </p>

@@ -5,5 +5,6 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
-
-Admin.create! :login => 'Ben', :password => 'S@pphire', :password_confirmation => 'S@pphire'
+5.times do
+rake db:populate
+end
